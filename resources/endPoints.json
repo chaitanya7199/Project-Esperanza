@@ -1,0 +1,42 @@
+[{
+  "productID": "PROD_01",
+  "partnerID": "P_001",
+  "apiEndpoint": "http://localhost:9090/tata-aig/car-insurance/quote",
+  "apiSignature": {
+    "email": "email",
+    "fullName": "fullName",
+    "phone": "phone",
+    "registrationNo": "registrationNo"
+  },
+  "apiMethod": "GET"
+},{
+  "productID": "PROD_02",
+  "partnerID": "P_001",
+  "apiSignature": "",
+  "apiEndpoint": "http://localhost:9090/tata-aig/bike-insurance/quote",
+  "apiMethod": "POST"
+},{
+  "productID": "PROD_01",
+  "partnerID": "P_002",
+  "apiEndpoint": "http://localhost:9090/bharathi-axa/car-insurance/quote",
+  "apiSignature": {
+    "email": "email",
+    "fullName": "fullName",
+    "phone": "phone",
+    "registrationNo": "registrationNo"
+  },
+  "apiMethod": "GET"
+},{
+  "productID": "PROD_03",
+  "partnerID": "P_001",
+  "apiSignature": "",
+  "apiEndpoint": "http://localhost:9090/tata-aig/travel-insurance/quote",
+  "apiMethod": "GET"
+},{
+    "productID": "PROD_03",
+    "partnerID": "P_003",
+    "apiEndpoint": "http://localhost:9090/reliance-general-insurance/travel-insurance/quote",
+    "apiSignature": "",
+    "apiMethod": "GET"
+}
+]

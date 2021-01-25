@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "5ff2f2fb09d41edd104c20a7"
+  },
+  "productID": "PROD_02",
+  "id": "bike insurance",
+  "title": "Bike Insurance",
+  "text": "Bike Insurance provided by Tata AIG",
+  "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7DIEOxb1u-IhBU4KahrXvJ7I9QqIyfhscEA&usqp=CAU",
+  "navigationPath": "/bike-insurance",
+  "backgroundImage": "https://wallpapercave.com/wp/wp2500537.jpg",
+  "bannerSrc": "https://general.futuregenerali.in/general-insurance/img/slides/Bike_banner.jpg"
+},{
+  "_id": {
+    "$oid": "5ff2f2fb09d41edd104c20a8"
+  },
+  "productID": "PROD_01",
+  "id": "car insurance",
+  "title": "Car Insurance",
+  "text": "Car Insurance provided by Tata AIG",
+  "imageSrc": "https://image.flaticon.com/icons/png/512/55/55283.png",
+  "navigationPath": "/car-insurance",
+  "backgroundImage": "https://www.wallpapertip.com/wmimgs/220-2203876_beautiful-car-background-hd-3d-car-background-hd.jpg",
+  "bannerSrc": "https://www.tsginsure.in/storage/7804.jpg"
+},{
+  "_id": {
+    "$oid": "5ffbf400d2437619d48bb85e"
+  },
+  "productID": "PROD_03",
+  "backgroundImage": "https://wallpaperaccess.com/full/185289.jpg",
+  "navigationPath": "/travel-insurance",
+  "imageSrc": "https://cdn2.iconfinder.com/data/icons/insurance-glyph-1/64/Flight_Insurance-512.png",
+  "id": "travel-insurance",
+  "text": "Travel Insurance",
+  "title": "Travel Insurance",
+  "bannerSrc": "https://bonvoyagetravels.in/wp/wp-content/uploads/2019/09/ins.jpg"
+}]

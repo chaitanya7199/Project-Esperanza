@@ -1,0 +1,126 @@
+{
+    "port": 9090,
+    "protocol": "http",
+    "stubs": [{
+            "responses": [{
+                "is": {
+                    "statusCode": 200,
+                    "body": [
+						{
+							"IDV": 757784,
+							"Premium": 1478,
+                            "Partner": "TATA AIG"
+						}
+					],
+					"headers": {
+						"Access-Control-Allow-Origin": "http://localhost:3001",
+						"Access-Control-Allow-Methods": "GET, POST, PUT",
+						"Access-Control-Allow-Headers": "Content-Type,application/json"
+					}
+                }
+            }],
+            "predicates": [{
+                "equals": {
+                    "path": "/tata-aig/car-insurance/quote"
+                }
+            }]
+        },
+        {
+            "responses": [{
+                "is": {
+                    "statusCode": 200,
+                    "body": [
+						{
+							"IDV": 75334,
+							"Premium": 1500,
+                            "Partner": "Bharathi-Axa"
+						}
+					],
+					"headers": {
+						"Access-Control-Allow-Origin": "http://localhost:3001",
+						"Access-Control-Allow-Methods": "GET, POST, PUT",
+						"Access-Control-Allow-Headers": "Content-Type,application/json"
+					}
+                }
+            }],
+            "predicates": [{
+                "equals": {
+                    "path": "/bharathi-axa/car-insurance/quote"
+                }
+            }]
+        },
+        {
+            "responses": [{
+                "is": {
+                    "statusCode": 200,
+                    "body": [
+                        {
+                            "IDV": 796784,
+                            "Premium": 1478,
+                            "Partner": "TATA AIG"
+                        }
+                    ],
+                    "headers": {
+                        "Access-Control-Allow-Origin": "http://localhost:3001",
+                        "Access-Control-Allow-Methods": "GET, POST, PUT",
+                        "Access-Control-Allow-Headers": "Content-Type,application/json"
+                    }
+                }
+            }],
+            "predicates": [{
+                "equals": {
+                    "path": "/tata-aig/travel-insurance/quote"
+                }
+            }]
+        }
+        ,
+        {
+            "responses": [{
+                "is": {
+                    "statusCode": 200,
+                    "body": [
+                        {
+                            "IDV": 496777,
+                            "Premium": 1478,
+                            "Partner": "Reliance"
+                        }
+                    ],
+                    "headers": {
+                        "Access-Control-Allow-Origin": "http://localhost:3001",
+                        "Access-Control-Allow-Methods": "GET, POST, PUT",
+                        "Access-Control-Allow-Headers": "Content-Type,application/json"
+                    }
+                }
+            }],
+            "predicates": [{
+                "equals": {
+                    "path": "/reliance-general-insurance/travel-insurance/quote"
+                }
+            }]
+        },
+        {
+            "responses": [{
+                "is": {
+                    "statusCode": 200,
+                    "body": [
+                        {
+                            "IDV": 996777,
+                            "Premium": 1478,
+                            "Partner": "TATA AIG"
+                        }
+                    ],
+                    "headers": {
+                        "Access-Control-Allow-Origin": "http://localhost:3001",
+                        "Access-Control-Allow-Methods": "GET, POST, PUT",
+                        "Access-Control-Allow-Headers": "Content-Type,application/json"
+                    }
+                }
+            }],
+            "predicates": [{
+                "equals": {
+                    "path": "/tata-aig/bike-insurance/quote"
+                }
+            }]
+        }
+    ]
+}

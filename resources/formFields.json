@@ -1,0 +1,240 @@
+[{
+  "productID": "PROD_01",
+  "fields": [
+    {
+      "fieldID": "1",
+      "fieldPosition": "1",
+      "name": "registrationNo",
+      "id": "registrationNo",
+      "type": "text",
+      "label": "Registration No",
+      "placeholder": "Enter your Registration No",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^[A-Za-z]{2}\\d{2}[A-Za-z]{1,3}\\d{4}$/)}",
+        "message": "Invalid Registration No."
+      }
+    },
+    {
+      "fieldID": "2",
+      "fieldPosition": "1",
+      "name": "fullName",
+      "id": "fullName",
+      "type": "text",
+      "label": "Full Name",
+      "placeholder": "Enter your Full Name",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^[A-Za-z\\s]{3,15}$/)}",
+        "message": "Name must be of min. 3 and max. 15 characters"
+      }
+    },
+    {
+      "fieldID": "3",
+      "fieldPosition": "1",
+      "name": "email",
+      "id": "email",
+      "type": "text",
+      "label": "Email Address",
+      "placeholder": "Enter your email",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/)}",
+        "message": "Invalid email address"
+      }
+    },
+    {
+      "fieldID": "4",
+      "fieldPosition": "1",
+      "name": "phone",
+      "id": "phoneNumber",
+      "type": "number",
+      "label": "Phone Number",
+      "placeholder": "Enter your Phone Number",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^\\d{10}$/)}",
+        "message": "Phone Number must be of 10 digits without country code"
+      }
+    },
+    {
+      "fieldID": "4",
+      "fieldPosition": "1",
+      "name": "submitbtn",
+      "id": "submitbtn",
+      "type": "submit",
+      "htmlType": "input",
+      "className": "myButton",
+      "value": "View Quotes"
+    }
+  ]
+},{
+  "productID": "PROD_02",
+  "fields": [
+    {
+      "fieldID": "1",
+      "fieldPosition": "1",
+      "name": "registrationNo",
+      "id": "registrationNo",
+      "type": "text",
+      "label": "Registration No",
+      "placeholder": "Enter your Registration No",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^[A-Za-z]{2}\\d{2}[A-Za-z]{1,3}\\d{4}$/)}",
+        "message": "Invalid Registration No."
+      }
+    },
+    {
+      "fieldID": "2",
+      "fieldPosition": "1",
+      "name": "fullName",
+      "id": "fullName",
+      "type": "text",
+      "label": "Full Name",
+      "placeholder": "Enter your Full Name",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^[A-Za-z\\s]{3,15}$/)}",
+        "message": "Name must be of min. 3 and max. 15 characters"
+      }
+    },
+    {
+      "fieldID": "3",
+      "fieldPosition": "1",
+      "name": "email",
+      "id": "email",
+      "type": "text",
+      "label": "Email Address",
+      "placeholder": "Enter your email",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/)}",
+        "message": "Invalid email address"
+      }
+    },
+    {
+      "fieldID": "4",
+      "fieldPosition": "1",
+      "name": "phone",
+      "id": "phoneNumber",
+      "type": "number",
+      "label": "Phone Number",
+      "placeholder": "Enter your Phone Number",
+      "htmlType": "input",
+      "className": "form-control mb-1",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{return val.match(/^\\d{10}$/)}",
+        "message": "Phone Number must be of 10 digits without country code"
+      }
+    },
+    {
+      "fieldID": "4",
+      "fieldPosition": "1",
+      "name": "submitbtn",
+      "id": "submitbtn",
+      "type": "submit",
+      "htmlType": "input",
+      "className": "myButton",
+      "value": "View Quotes"
+    }
+  ]
+},{
+  "productID": "PROD_03",
+  "fields": [
+    {
+      "fieldID": "1",
+      "fieldPosition": "1",
+      "label": "Country you are visiting",
+      "name": "Country you are visiting",
+      "id": "country",
+      "className": "form-control",
+      "htmlType": "select",
+      "options": [
+        "USA",
+        "UK",
+        "Saudi Arabia"
+      ],
+      "required": "{true}"
+    },
+    {
+      "fieldID": "2",
+      "fieldPosition": "1",
+      "label": "Trip starting from",
+      "name": "Trip starting from",
+      "id": "start-country",
+      "className": "form-control",
+      "htmlType": "select",
+      "options": [
+        "India",
+        "UAE"
+      ],
+      "required": "{true}"
+    },
+    {
+      "fieldID": "3",
+      "fieldPosition": "1",
+      "name": "Travellers",
+      "id": "travellers",
+      "type": "number",
+      "label": "Number of Travellers",
+      "placeholder": "Enter Number of Travellers",
+      "htmlType": "input",
+      "className": "form-control",
+      "required": "{true}",
+      "validation": {
+        "func": "(val)=>{if(val > 0) {return true ;} return null;}",
+        "message": "Travellers should be atleast 1"
+      }
+    },
+    {
+      "fieldID": "5",
+      "fieldPosition": "1",
+      "name": "Starting date:",
+      "id": "start-date",
+      "type": "date",
+      "label": "Starting date:",
+      "placeholder": "Starting date:",
+      "htmlType": "input",
+      "className": "form-control",
+      "required": "{true}"
+    },
+    {
+      "fieldID": "6",
+      "fieldPosition": "1",
+      "name": "Ending date:",
+      "id": "ending-date",
+      "type": "date",
+      "label": "Ending date:",
+      "placeholder": "Ending date:",
+      "htmlType": "input",
+      "className": "form-control",
+      "required": "{true}"
+    },
+    {
+      "fieldID": "7",
+      "fieldPosition": "1",
+      "name": "submitbtn",
+      "id": "submitbtn",
+      "type": "submit",
+      "htmlType": "input",
+      "className": "myButton",
+      "value": "View Quotes"
+    }
+  ]
+}]
