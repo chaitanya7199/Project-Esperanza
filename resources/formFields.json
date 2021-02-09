@@ -1,7 +1,4 @@
 [{
-  "_id": {
-    "$oid": "5ffd459bb953544c6443310c"
-  },
   "productID": "PROD_02",
   "fields": [
     {
@@ -11,11 +8,11 @@
       "className": "form-control mb-1",
       "id": "registrationNo",
       "label": "Registration No",
-      "placeholder": "Enter your Registration No",
+      "placeholder": "Enter your Registration Number",
       "type": "text",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^[A-Za-z]{2}\\d{2}[A-Za-z]{1,3}\\d{4}$/)}",
+        "pattern": "[A-Za-z]{2}\\d{2}[A-Za-z]{1,3}\\d{4}",
         "message": "Invalid Registration No."
       },
       "fieldID": "1"
@@ -31,7 +28,7 @@
       "type": "text",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^[A-Za-z\\s]{3,15}$/)}",
+        "pattern": "[A-Za-z\\s]{3,15}",
         "message": "Name must be of min. 3 and max. 15 characters"
       },
       "fieldID": "2"
@@ -47,7 +44,7 @@
       "type": "text",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/)}",
+        "pattern": "[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+",
         "message": "Invalid email address"
       },
       "fieldID": "3"
@@ -63,21 +60,21 @@
       "type": "number",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^\\d{10}$/)}",
+        "pattern": "\\d{10}",
         "message": "Phone Number must be of 10 digits without country code"
       },
       "fieldID": "4"
     },
     {
-      "fieldPosition": "3",
-      "fieldID": "5",
       "htmlType": "input",
+      "fieldPosition": "3",
       "name": "conditions",
-      "id": "conditions",
-      "type": "checkbox",
-      "label": "I agree with the terms and conditions  ",
       "className": "form-check-input",
-      "required": "{true}"
+      "id": "conditions",
+      "label": "I agree with the terms and conditions  ",
+      "type": "checkbox",
+      "required": "{true}",
+      "fieldID": "5"
     },
     {
       "htmlType": "input",
@@ -89,11 +86,8 @@
       "value": "View Quotes",
       "fieldID": "6"
     }
-  ]
+  ],
 },{
-  "_id": {
-    "$oid": "600e4fba8eff754c84f6b078"
-  },
   "productID": "PROD_01",
   "fields": [
     {
@@ -107,7 +101,7 @@
       "type": "text",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^[A-Za-z]{2}\\d{2}[A-Za-z]{1,3}\\d{4}$/)}",
+        "pattern": "[A-Za-z]{2}\\d{2}[A-Za-z]{1,3}\\d{4}",
         "message": "Invalid Registration No."
       },
       "fieldID": "1"
@@ -123,7 +117,7 @@
       "type": "text",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^[A-Za-z\\s]{3,15}$/)}",
+        "pattern": "[A-Za-z\\s]{3,15}",
         "message": "Name must be of min. 3 and max. 15 characters"
       },
       "fieldID": "2"
@@ -139,7 +133,7 @@
       "type": "text",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/)}",
+        "pattern": "[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+",
         "message": "Invalid email address"
       },
       "fieldID": "3"
@@ -155,7 +149,7 @@
       "type": "number",
       "required": "{true}",
       "validation": {
-        "func": "(val)=>{return val.match(/^\\d{10}$/)}",
+        "pattern": "\\d{10}",
         "message": "Phone Number must be of 10 digits without country code"
       },
       "fieldID": "4"
@@ -218,251 +212,19 @@
       "fieldID": "7"
     },
     {
-      "fieldPosition": "4",
-      "fieldID": "8",
-      "htmlType": "input",
-      "name": "conditions",
-      "id": "conditions",
-      "type": "checkbox",
-      "label": "I agree with the terms and conditions  ",
-      "className": "form-check-input",
-      "required": "{true}"
-    },
-    {
       "htmlType": "input",
       "fieldPosition": "4",
-      "name": "submitbtn",
-      "className": "myButton",
-      "id": "submitbtn",
-      "type": "submit",
-      "value": "View Quotes",
-      "fieldID": "9"
-    }
-  ]
-},{
-  "_id": {
-    "$oid": "600e50378eff754c84f6b079"
-  },
-  "productID": "PROD_03",
-  "fields": [
-    {
-      "fieldID": "1",
-      "fieldPosition": "1",
-      "label": "Country you are visiting",
-      "name": "Country you are visiting",
-      "id": "country",
-      "className": "form-control",
-      "htmlType": "select",
-      "options": [
-        "USA",
-        "UK",
-        "Saudi Arabia"
-      ],
-      "required": "{true}"
-    },
-    {
-      "fieldID": "2",
-      "fieldPosition": "1",
-      "label": "Trip starting from",
-      "name": "Trip starting from",
-      "id": "start-country",
-      "className": "form-control",
-      "htmlType": "select",
-      "options": [
-        "India",
-        "UAE"
-      ],
-      "required": "{true}"
-    },
-    {
-      "fieldID": "3",
-      "fieldPosition": "1",
-      "name": "Travellers",
-      "id": "travellers",
-      "type": "number",
-      "label": "Number of Travellers",
-      "placeholder": "Enter Number of Travellers",
-      "htmlType": "input",
-      "className": "form-control",
-      "required": "{true}",
-      "validation": {
-        "func": "(val)=>{if(val > 0) {return true ;} return null;}",
-        "message": "Travellers should be atleast 1"
-      }
-    },
-    {
-      "fieldID": "5",
-      "fieldPosition": "1",
-      "name": "Starting date:",
-      "id": "start-date",
-      "type": "date",
-      "label": "Starting date:",
-      "placeholder": "Starting date:",
-      "htmlType": "input",
-      "className": "form-control",
-      "required": "{true}"
-    },
-    {
-      "fieldID": "6",
-      "fieldPosition": "1",
-      "name": "Ending date:",
-      "id": "ending-date",
-      "type": "date",
-      "label": "Ending date:",
-      "placeholder": "Ending date:",
-      "htmlType": "input",
-      "className": "form-control",
-      "required": "{true}"
-    },
-    {
-      "fieldPosition": "2",
-      "fieldID": "7",
-      "htmlType": "input",
       "name": "conditions",
+      "className": "form-check-input",
       "id": "conditions",
-      "type": "checkbox",
       "label": "I agree with the terms and conditions  ",
-      "className": "form-check-input",
-      "required": "{true}"
-    },
-    {
-      "fieldID": "8",
-      "fieldPosition": "2",
-      "name": "submitbtn",
-      "id": "submitbtn",
-      "type": "submit",
-      "htmlType": "input",
-      "className": "myButton",
-      "value": "View Quotes"
-    }
-  ]
-},{
-  "_id": {
-    "$oid": "60113ab980fc8e1be5eb2cc2"
-  },
-  "productID": "PROD_04",
-  "fields": [
-    {
-      "htmlType": "input",
-      "fieldPosition": "1",
-      "name": "fullName",
-      "className": "form-control mb-1",
-      "id": "fullName",
-      "label": "Full Name",
-      "placeholder": "Enter your Full Name",
-      "type": "text",
-      "required": "{true}",
-      "validation": {
-        "func": "(val)=>{return val.match(/^[A-Za-z\\s]{3,15}$/)}",
-        "message": "Name must be of min. 3 and max. 15 characters"
-      },
-      "fieldID": "1"
-    },
-    {
-      "htmlType": "select",
-      "fieldPosition": "1",
-      "name": "Gender",
-      "options": [
-        "Male",
-        "Female",
-        "Other"
-      ],
-      "className": "form-control",
-      "label": "Gender",
-      "id": "gender",
-      "required": "{true}",
-      "fieldID": "2"
-    },
-    {
-      "htmlType": "input",
-      "fieldPosition": "1",
-      "name": "Age",
-      "className": "form-control",
-      "id": "age",
-      "label": "Age",
-      "placeholder": "Enter age in years",
-      "type": "number",
-      "required": "{true}",
-      "validation": {
-        "func": "(val)=>{if(val > 0) {return true ;} return null;}",
-        "message": "Age should be greater than 0"
-      },
-      "fieldID": "3"
-    },
-    {
-      "htmlType": "input",
-      "fieldPosition": "1",
-      "name": "email",
-      "className": "form-control mb-1",
-      "id": "email",
-      "label": "Email Address",
-      "placeholder": "Enter your email",
-      "type": "text",
-      "required": "{true}",
-      "validation": {
-        "func": "(val)=>{return val.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/)}",
-        "message": "Invalid email address"
-      },
-      "fieldID": "4"
-    },
-    {
-      "htmlType": "input",
-      "fieldPosition": "1",
-      "name": "phone",
-      "className": "form-control mb-1",
-      "id": "phoneNumber",
-      "label": "Phone Number",
-      "placeholder": "Enter your Phone Number",
-      "type": "number",
-      "required": "{true}",
-      "validation": {
-        "func": "(val)=>{return val.match(/^\\d{10}$/)}",
-        "message": "Phone Number must be of 10 digits without country code"
-      },
-      "fieldID": "5"
-    },
-    {
-      "htmlType": "select",
-      "fieldPosition": "2",
-      "name": "medication",
-      "options": [
-        "Yes",
-        "No"
-      ],
-      "className": "form-control",
-      "label": "Do you take any medication:",
-      "id": "medication",
-      "required": "{true}",
-      "fieldID": "6"
-    },
-    {
-      "htmlType": "select",
-      "fieldPosition": "2",
-      "name": "smoke",
-      "options": [
-        "Yes",
-        "No"
-      ],
-      "className": "form-control",
-      "label": "Do you smoke/drink:",
-      "id": "smoke",
-      "required": "{true}",
-      "fieldID": "7"
-    },
-    {
-      "htmlType": "input",
-      "fieldPosition": "3",
-      "name": "conditions",
-      "className": "form-check-input",
-      "id": "conditions",
-      "label": "I agree with the terms and conditions",
       "type": "checkbox",
       "required": "{true}",
       "fieldID": "8"
     },
     {
       "htmlType": "input",
-      "fieldPosition": "3",
+      "fieldPosition": "4",
       "name": "submitbtn",
       "className": "myButton",
       "id": "submitbtn",
@@ -470,5 +232,98 @@
       "value": "View Quotes",
       "fieldID": "9"
     }
-  ]
+  ],
+  "_class": "com.axis.model.FormField"
+},{
+  "productID": "PROD_03",
+  "fields": [
+    {
+      "htmlType": "select",
+      "fieldPosition": "1",
+      "name": "Country you are visiting",
+      "options": [
+        "USA",
+        "UK",
+        "Saudi Arabia"
+      ],
+      "className": "form-control",
+      "label": "Country you are visiting",
+      "id": "country",
+      "required": "{true}",
+      "fieldID": "1"
+    },
+    {
+      "htmlType": "select",
+      "fieldPosition": "1",
+      "name": "Trip starting from",
+      "options": [
+        "India",
+        "UAE"
+      ],
+      "className": "form-control",
+      "label": "Trip starting from",
+      "id": "start-country",
+      "required": "{true}",
+      "fieldID": "2"
+    },
+    {
+      "htmlType": "input",
+      "fieldPosition": "1",
+      "name": "Travellers",
+      "className": "form-control",
+      "id": "travellers",
+      "label": "Number of Travellers",
+      "placeholder": "Enter Number of Travellers",
+      "type": "number",
+      "required": "{true}",
+      "fieldID": "3"
+    },
+    {
+      "htmlType": "input",
+  "_class": "com.axis.model.FormField"
+      "fieldPosition": "1",
+      "name": "Starting date:",
+      "className": "form-control",
+      "id": "start-date",
+      "label": "Starting date:",
+      "placeholder": "Starting date:",
+      "type": "date",
+      "required": "{true}",
+      "fieldID": "5"
+    },
+    {
+      "htmlType": "input",
+      "fieldPosition": "1",
+      "name": "Ending date:",
+      "className": "form-control",
+      "id": "ending-date",
+      "label": "Ending date:",
+      "placeholder": "Ending date:",
+      "type": "date",
+      "required": "{true}",
+      "fieldID": "6"
+    },
+    {
+      "htmlType": "input",
+      "fieldPosition": "2",
+      "name": "conditions",
+      "className": "form-check-input",
+      "id": "conditions",
+      "label": "I agree with the terms and conditions  ",
+      "type": "checkbox",
+      "required": "{true}",
+      "fieldID": "7"
+    },
+    {
+      "htmlType": "input",
+      "fieldPosition": "2",
+      "name": "submitbtn",
+      "className": "myButton",
+      "id": "submitbtn",
+      "type": "submit",
+      "value": "View Quotes",
+      "fieldID": "8"
+    }
+  ],
+  "_class": "com.axis.model.FormField"
 }]
